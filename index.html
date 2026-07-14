@@ -22,10 +22,10 @@
       <span>GQ Digital</span>
     </div>
     <div class="navlinks">
+      <a href="#nosotros">Nosotros</a>
       <a href="#servicios">Servicios</a>
       <a href="#proyectos">Proyectos</a>
       <a href="#proceso">Proceso</a>
-      <a href="#nosotros">Nosotros</a>
       <a href="#faq">Preguntas</a>
     </div>
     <div class="navcta">
@@ -34,6 +34,14 @@
     </div>
     <button class="menu-btn" id="menuBtn">☰</button>
   </nav>
+  <div class="mobile-nav" id="mobileNav">
+    <a href="#nosotros">Nosotros</a>
+    <a href="#servicios">Servicios</a>
+    <a href="#proyectos">Proyectos</a>
+    <a href="#proceso">Proceso</a>
+    <a href="#faq">Preguntas</a>
+    <a href="#" data-wa-link class="btn btn-wsp" style="margin-top:8px; justify-content:center;">WhatsApp</a>
+  </div>
 </header>
 
 <main>
@@ -493,8 +501,17 @@
   });
 
   // mobile menu (simple: scroll to contact if toggled without full nav — fallback)
-  document.getElementById('menuBtn').addEventListener('click', ()=>{
-    document.querySelector('#contacto').scrollIntoView({behavior:'smooth'});
+  const menuBtn = document.getElementById('menuBtn');
+  const mobileNav = document.getElementById('mobileNav');
+  menuBtn.addEventListener('click', ()=>{
+    mobileNav.classList.toggle('open');
+    menuBtn.textContent = mobileNav.classList.contains('open') ? '✕' : '☰';
+  });
+  mobileNav.querySelectorAll('a').forEach(link=>{
+    link.addEventListener('click', ()=>{
+      mobileNav.classList.remove('open');
+      menuBtn.textContent = '☰';
+    });
   });
 </script>
 

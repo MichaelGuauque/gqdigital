@@ -90,6 +90,24 @@
   .navcta{ display:flex; gap:10px; }
   .menu-btn{ display:none; background:none; border:none; color:var(--paper); font-size:24px; cursor:pointer; }
 
+  .mobile-nav{
+    display:none;
+    flex-direction:column;
+    gap:2px;
+    padding:8px 28px 22px;
+    border-top:1px solid var(--line);
+    background:rgba(10,14,26,0.98);
+  }
+  .mobile-nav a{
+    padding:13px 4px;
+    font-size:15px;
+    color:var(--paper);
+    border-bottom:1px solid var(--line);
+  }
+  .mobile-nav.open{ display:flex; }
+  @media (min-width:901px){
+    .mobile-nav{ display:none !important; }
+  }
   /* ---------- HERO ---------- */
   .hero{
     position:relative; z-index:1;
