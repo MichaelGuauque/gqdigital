@@ -461,6 +461,19 @@
     text-align:center;
     overflow:hidden;
   }
+
+  .cta-btn-final{
+    position:relative;
+    z-index:2;
+    padding:16px 30px;
+    font-size:16px;
+  }
+  @media (max-width:480px){
+    .cta-btn-final{
+      padding:10px 14px;
+      font-size:12px;
+    }
+  }
   .cta-final::before{
     content:'';
     position:absolute; width:480px; height:480px; border-radius:50%;
