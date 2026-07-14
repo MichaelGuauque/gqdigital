@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GQ Digital — Software, Diseño Web, UX/UI y Marketing Digital</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+ <link rel="icon" type="image/png" href="images/icon.png">
+</head>
+<body>
+
+<div class="grid-bg"></div>
+
+<header>
+  <nav>
+    <div class="brand">
+      <img src="images/icon.png" alt="GQ Digital">
+      <span>GQ Digital</span>
+    </div>
+    <div class="navlinks">
+      <a href="#servicios">Servicios</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#proceso">Proceso</a>
+      <a href="#nosotros">Nosotros</a>
+      <a href="#faq">Preguntas</a>
+    </div>
+    <div class="navcta">
+      <a href="#contacto" class="btn btn-ghost">Contacto</a>
+      <a href="https://wa.me/573185717309?text=Hola%20GQ%20Digital%2C%20quiero%20una%20cotizaci%C3%B3n%20para%20mi%20proyecto" target="_blank" class="btn btn-wsp">WhatsApp</a>
+    </div>
+    <button class="menu-btn" id="menuBtn">☰</button>
+  </nav>
+</header>
+
+<main>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="eyebrow"><span class="dot"></span>SOFTWARE · DISEÑO WEB · UX/UI · MARKETING DIGITAL</span>
+        <h1>Construimos el <span class="accent">software</span> que tu idea necesita</h1>
+        <p class="lead">Diseñamos y desarrollamos landing pages, sitios web y aplicaciones a la medida que ayudan a negocios, emprendimientos y artistas a tener presencia digital real — sin atajos ni plantillas genéricas.</p>
+        <div class="hero-ctas">
+          <a href="https://wa.me/573185717309?text=Hola%20GQ%20Digital%2C%20quiero%20una%20cotizaci%C3%B3n%20para%20mi%20proyecto" target="_blank" class="btn btn-primary">
+            Cuéntanos tu proyecto →
+          </a>
+          <a href="#servicios" class="btn btn-ghost">Ver servicios</a>
+        </div>
+        <div class="trust-line"><span class="pulse"></span> +2 años construyendo productos digitales · Respuesta en menos de 24h</div>
+      </div>
+
+      <div class="term-wrap">
+        <div class="term">
+          <div class="term-bar">
+            <span class="term-dot r"></span><span class="term-dot y"></span><span class="term-dot g"></span>
+            <span class="term-title">gq-digital — build.sh</span>
+          </div>
+          <div class="term-body">
+            <div><span class="c-slate">$</span> <span class="c-white">gq init</span> <span class="c-slate">--proyecto="tu-idea"</span></div>
+            <div><span class="c-green">✓</span> <span class="c-slate">Analizando requerimientos...</span></div>
+            <div><span class="c-green">✓</span> <span class="c-slate">Diseñando experiencia UX/UI...</span></div>
+            <div><span class="c-green">✓</span> <span class="c-slate">Compilando frontend responsivo...</span></div>
+            <div style="margin-top:14px;"><span class="c-blue">&gt;</span> <span id="typed-line" class="c-white"></span></div>
+          </div>
+        </div>
+        <div class="float-card fc1">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#5ac8fa" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg>
+          Sitio en línea
+        </div>
+        <div class="float-card fc2">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#5ac8fa" stroke-width="2"><rect x="3" y="11" width="18" height="10" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+          100% seguro
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- IDEAL PARA -->
+  <section id="nosotros">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="sec-eyebrow">Para quién trabajamos</span>
+        <h2>Soluciones digitales pensadas para tu momento</h2>
+        <p>No importa en qué etapa estás: creamos la solución digital que impulsa lo que ya estás construyendo.</p>
+      </div>
+      <div class="audience-grid">
+        <div class="audience-card reveal">
+          <div class="audience-icon" style="background:rgba(47,111,237,0.12);">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#5ac8fa" stroke-width="2"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6"/></svg>
+          </div>
+          <h3>Negocios</h3>
+          <p>Ten presencia profesional, genera confianza y consigue más clientes con un sitio que respalda tu marca.</p>
+        </div>
+        <div class="audience-card reveal">
+          <div class="audience-icon" style="background:rgba(90,200,250,0.12);">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#5ac8fa" stroke-width="2"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="M12 15l-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/></svg>
+          </div>
+          <h3>Emprendimientos</h3>
+          <p>Destaca tu marca desde el primer día, conecta con tu audiencia y haz crecer tu proyecto con una base sólida.</p>
+        </div>
+        <div class="audience-card reveal">
+          <div class="audience-icon" style="background:rgba(47,111,237,0.12);">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#5ac8fa" stroke-width="2"><circle cx="13.5" cy="6.5" r=".5"/><circle cx="17.5" cy="10.5" r=".5"/><circle cx="8.5" cy="7.5" r=".5"/><circle cx="6.5" cy="12.5" r=".5"/><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C22 6.499 17.5 2 12 2z"/></svg>
+          </div>
+          <h3>Artistas</h3>
+          <p>Muestra tu talento, comparte tu portafolio y llega a más personas con un espacio digital hecho a tu medida.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICIOS -->
+  <section id="servicios">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="sec-eyebrow">Servicios</span>
+        <h2>Cinco disciplinas, un solo equipo</h2>
+        <p>De la idea al producto en línea: cubrimos todo el ciclo, desde el desarrollo hasta la automatización de tu CRM.</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card reveal">
+          <span class="service-tag">// Software</span>
+          <h3>Aplicaciones web a medida</h3>
+          <p>Sistemas robustos, dashboards y plataformas diseñadas para resolver procesos reales de tu negocio.</p>
+          <ul class="service-list">
+            <li>Arquitectura escalable y segura</li>
+            <li>Integraciones con tus herramientas actuales</li>
+            <li>Paneles administrativos a medida</li>
+          </ul>
+        </div>
+        <div class="service-card reveal">
+          <span class="service-tag">// Diseño Web</span>
+          <h3>Landing pages y sitios web</h3>
+          <p>Páginas rápidas, responsivas y pensadas para convertir visitantes en clientes desde el primer clic.</p>
+          <ul class="service-list">
+            <li>Landings para campañas y lanzamientos</li>
+            <li>Sitios corporativos y de portafolio</li>
+            <li>Optimización de velocidad y SEO técnico</li>
+          </ul>
+        </div>
+        <div class="service-card reveal">
+          <span class="service-tag">// UX / UI</span>
+          <h3>Diseño de experiencia e interfaz</h3>
+          <p>Interfaces claras y agradables que hacen que tus usuarios entiendan y disfruten tu producto.</p>
+          <ul class="service-list">
+            <li>Investigación y arquitectura de información</li>
+            <li>Prototipos navegables</li>
+            <li>Sistemas de diseño consistentes</li>
+          </ul>
+        </div>
+        <div class="service-card reveal">
+          <span class="service-tag">// Marketing Digital</span>
+          <h3>Estrategia y crecimiento</h3>
+          <p>Acompañamos tu presencia digital para que consigas más visibilidad, clientes y oportunidades.</p>
+          <ul class="service-list">
+            <li>Estrategia de contenido y redes</li>
+            <li>Configuración de campañas digitales</li>
+            <li>Analítica y seguimiento de resultados</li>
+          </ul>
+        </div>
+        <div class="service-card service-card-wide reveal">
+          <span class="service-tag">// Consultoría CRM</span>
+          <h3>Salesforce Marketing Cloud &amp; CRM</h3>
+          <p>Configuramos y automatizamos tu CRM para que tu equipo comercial y de marketing trabaje sobre datos limpios y procesos que no dependen de tareas manuales.</p>
+          <ul class="service-list service-list-wide">
+            <li>Configuración e implementación de Salesforce Marketing Cloud</li>
+            <li>Automatización de flujos de marketing y ventas (journeys, triggers)</li>
+            <li>Integración del CRM con tu sitio web y otras herramientas</li>
+            <li>Segmentación de audiencias y campañas de email/SMS automatizadas</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INCLUYE -->
+  <section>
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="sec-eyebrow">Lo que incluye</span>
+        <h2>Cada proyecto viene completo, sin sorpresas</h2>
+      </div>
+      <div class="includes-grid">
+        <div class="include-card reveal">
+          <div class="include-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div>
+          <h3>Diseños modernos y responsivos</h3>
+          <p>Tu web se verá increíble en cualquier dispositivo, sin excepciones.</p>
+        </div>
+        <div class="include-card reveal">
+          <div class="include-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+          <h3>Rendimiento y seguridad</h3>
+          <p>Sitios rápidos, optimizados y protegidos para tu tranquilidad.</p>
+        </div>
+        <div class="include-card reveal">
+          <div class="include-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></div>
+          <h3>Desarrollo a medida</h3>
+          <p>Funcionalidades pensadas específicamente para tu proyecto.</p>
+        </div>
+        <div class="include-card reveal">
+          <div class="include-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/></svg></div>
+          <h3>Soporte y mantenimiento</h3>
+          <p>Acompañamiento continuo para que todo funcione siempre.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROYECTOS -->
+  <section id="proyectos">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="sec-eyebrow">Portafolio</span>
+        <h2>Proyectos que ya están en línea</h2>
+        <p>Algunos de los productos digitales que hemos construido para bandas, negocios y comunidades.</p>
+      </div>
+
+      <div class="carousel reveal">
+        <div class="carousel-track-wrap">
+          <div class="carousel-track" id="carTrack">
+
+            <!-- SLIDE 1: BEER DRINKERS -->
+            <div class="slide">
+              <div class="slide-visual">
+                <div class="browser-frame">
+                  <div class="browser-bar">
+                    <span class="term-dot r"></span><span class="term-dot y"></span><span class="term-dot g"></span>
+                    <div class="browser-url">michaelguauque.github.io/beerdrinkers</div>
+                  </div>
+                  <div class="browser-viewport">
+                    <img src="images/beer-drinkers.png" alt="Beer Drinkers">
+                    <a class="visual-link" href="https://michaelguauque.github.io/beerdrinkers/" target="_blank"><span>Ver sitio ↗</span></a>
+                  </div>
+                </div>
+              </div>
+              <div class="slide-info">
+                <div class="slide-tags"><span class="slide-tag">Landing Page</span><span class="slide-tag">Banda de Metal</span></div>
+                <h3>Beer Drinkers</h3>
+                <p>Sitio para una banda de thrash metal de Palmira, Valle del Cauca. Presenta su historia, discografía y redes en una sola página, con una estética oscura acorde a su género musical.</p>
+                <a href="https://michaelguauque.github.io/beerdrinkers/" target="_blank" class="btn btn-primary">Ver proyecto →</a>
+              </div>
+            </div>
+
+            <!-- SLIDE 2: FERMENTO -->
+            <div class="slide">
+              <div class="slide-visual">
+                <div class="browser-frame">
+                  <div class="browser-bar">
+                    <span class="term-dot r"></span><span class="term-dot y"></span><span class="term-dot g"></span>
+                    <div class="browser-url">michaelguauque.github.io/fermento</div>
+                  </div>
+                  <div class="browser-viewport">
+                    <img src="images/fermento.png" alt="Fermento">
+                    <a class="visual-link" href="https://michaelguauque.github.io/fermento/" target="_blank"><span>Ver sitio ↗</span></a>
+                  </div>
+                </div>
+              </div>
+              <div class="slide-info">
+                <div class="slide-tags"><span class="slide-tag">Landing Page</span><span class="slide-tag">Panadería Artesanal</span></div>
+                <h3>Fermento</h3>
+                <p>Landing page para una panadería oculta de masa madre en Cali. Muestra su menú, su proceso de fermentación lenta y facilita los pedidos anticipados directo por WhatsApp.</p>
+                <a href="https://michaelguauque.github.io/fermento/" target="_blank" class="btn btn-primary">Ver proyecto →</a>
+              </div>
+            </div>
+
+            <!-- SLIDE 3: CONJUNTO RESIDENCIAL -->
+            <div class="slide">
+              <div class="slide-visual">
+                <div class="browser-frame">
+                  <div class="browser-bar">
+                    <span class="term-dot r"></span><span class="term-dot y"></span><span class="term-dot g"></span>
+                    <div class="browser-url">app · gestión de conjunto residencial</div>
+                  </div>
+                  <div class="browser-viewport">
+                    <img src="images/residencial.png" alt="App de gestión de conjunto residencial">
+                  </div>
+                </div>
+              </div>
+              <div class="slide-info">
+                <div class="slide-tags"><span class="slide-tag">Aplicación Web</span><span class="slide-tag">Gestión Residencial</span></div>
+                <h3>Gestión de Conjunto Residencial</h3>
+                <p>Plataforma con roles de administrador, propietario y arrendatario para gestionar pagos, multas, paz y salvos, asambleas, comunicados y reserva de zonas comunes. El admin además controla ingresos, gastos y el balance financiero del conjunto en tiempo real.</p>
+                <span class="badge-private">🔒 Proyecto privado · demo bajo solicitud</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="carousel-nav">
+          <button class="car-btn" id="carPrev" aria-label="Anterior">‹</button>
+          <div class="car-dots" id="carDots"></div>
+          <button class="car-btn" id="carNext" aria-label="Siguiente">›</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESO -->
+  <section id="proceso">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="sec-eyebrow">Cómo trabajamos</span>
+        <h2>Un proceso claro, de principio a fin</h2>
+        <p>Sabrás exactamente en qué etapa está tu proyecto en todo momento.</p>
+      </div>
+      <div class="process">
+        <div class="p-step reveal"><div class="p-num">1</div><h3>Descubrimiento</h3><p>Entendemos tu negocio, tus objetivos y a quién quieres llegar.</p></div>
+        <div class="p-step reveal"><div class="p-num">2</div><h3>Diseño</h3><p>Creamos el prototipo visual y validamos contigo antes de programar.</p></div>
+        <div class="p-step reveal"><div class="p-num">3</div><h3>Desarrollo</h3><p>Construimos tu proyecto con código limpio y buenas prácticas.</p></div>
+        <div class="p-step reveal"><div class="p-num">4</div><h3>Pruebas</h3><p>Revisamos cada detalle en distintos dispositivos y navegadores.</p></div>
+        <div class="p-step reveal"><div class="p-num">5</div><h3>Lanzamiento</h3><p>Publicamos tu proyecto y te acompañamos después del lanzamiento.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY / STATS -->
+  <section>
+    <div class="wrap">
+      <div class="why-band reveal">
+        <div class="why-stat">
+          <h4>+2 años</h4>
+          <p>de experiencia en desarrollo de software</p>
+        </div>
+        <div class="why-sep"></div>
+        <div class="why-list">
+          <div class="why-item">
+            <span class="lbl">Entrega a tiempo</span>
+            <span class="sub">Cumplimos los plazos que acordamos</span>
+          </div>
+          <div class="why-item">
+            <span class="lbl">Comunicación clara</span>
+            <span class="sub">Sabrás siempre en qué vamos</span>
+          </div>
+          <div class="why-item">
+            <span class="lbl">Pasión por el detalle</span>
+            <span class="sub">Cuidamos cada parte de tu proyecto</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="sec-eyebrow">Preguntas frecuentes</span>
+        <h2>Todo lo que necesitas saber</h2>
+      </div>
+      <div class="faq reveal">
+        <div class="faq-item">
+          <div class="faq-q"><span>¿Cuánto tiempo toma construir mi sitio?</span><span class="plus">+</span></div>
+          <div class="faq-a"><div class="faq-a-inner">Una landing page suele tomar entre 1 y 2 semanas. Sitios corporativos o aplicaciones más robustas dependen del alcance, y te daremos un tiempo estimado claro antes de empezar.</div></div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q"><span>¿Qué incluye el mantenimiento?</span><span class="plus">+</span></div>
+          <div class="faq-a"><div class="faq-a-inner">Incluye actualizaciones, monitoreo de seguridad, copias de respaldo y ajustes menores para que tu sitio siga funcionando sin problemas.</div></div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q"><span>¿Cómo son las formas de pago?</span><span class="plus">+</span></div>
+          <div class="faq-a"><div class="faq-a-inner">Trabajamos con un anticipo para iniciar el proyecto y el saldo restante contra la entrega. Para proyectos más grandes, podemos definir pagos por hitos.</div></div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q"><span>¿Puedo pedir cambios después de la entrega?</span><span class="plus">+</span></div>
+          <div class="faq-a"><div class="faq-a-inner">Sí. Cada proyecto incluye una ronda de ajustes post-entrega, y después puedes contratar soporte continuo si lo necesitas.</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section id="contacto">
+    <div class="wrap">
+      <div class="cta-final reveal">
+        <h2>Hagamos realidad tu proyecto</h2>
+        <p>Cuéntame tu idea y construyamos juntos algo increíble. Te respondo directamente, sin intermediarios.</p>
+        <a href="https://wa.me/573185717309?text=Hola%20GQ%20Digital%2C%20quiero%20una%20cotizaci%C3%B3n%20para%20mi%20proyecto" target="_blank" class="btn btn-wsp" style="padding:16px 30px; font-size:16px;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.005c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2zm0 18.06h-.005a8.14 8.14 0 0 1-4.15-1.14l-.3-.18-3.12.82.83-3.04-.19-.31a8.15 8.15 0 0 1-1.25-4.33c0-4.5 3.67-8.16 8.18-8.16 2.18 0 4.23.85 5.78 2.4a8.11 8.11 0 0 1 2.39 5.77c0 4.51-3.67 8.17-8.17 8.17zm4.48-6.12c-.24-.12-1.45-.72-1.68-.8-.22-.08-.39-.12-.55.12-.16.24-.63.8-.78.96-.14.16-.29.18-.53.06-.24-.12-1.03-.38-1.96-1.21-.72-.65-1.21-1.44-1.35-1.68-.14-.24-.01-.37.11-.49.11-.11.24-.29.36-.43.12-.14.16-.24.24-.4.08-.16.04-.31-.02-.43-.06-.12-.55-1.33-.76-1.83-.2-.48-.4-.42-.55-.42-.14 0-.31-.02-.47-.02-.16 0-.43.06-.65.31-.22.24-.86.84-.86 2.05 0 1.2.88 2.37 1 2.53.12.16 1.72 2.63 4.17 3.69.58.25 1.04.4 1.39.51.59.19 1.12.16 1.54.1.47-.07 1.45-.59 1.65-1.16.2-.57.2-1.06.14-1.16-.06-.1-.22-.16-.46-.28z"/></svg>
+          Escríbeme por WhatsApp
+        </a>
+        <div class="cta-badges">
+          <div class="cta-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>Entrega a tiempo</div>
+          <div class="cta-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Comunicación clara</div>
+          <div class="cta-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>Pasión por los detalles</div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-brand">
+          <img src="images/icon.png" alt="GQ Digital">
+          <span>GQ Digital</span>
+        </div>
+        <p class="foot-tag">Software, diseño web, UX/UI y marketing digital para negocios, emprendimientos y artistas.</p>
+      </div>
+      <div class="foot-cols">
+        <div class="foot-col">
+          <h5>Navegación</h5>
+          <a href="#servicios">Servicios</a>
+          <a href="#proceso">Proceso</a>
+          <a href="#faq">Preguntas</a>
+        </div>
+        <div class="foot-col">
+          <h5>Contacto</h5>
+          <a href="https://wa.me/573185717309" target="_blank">WhatsApp: 318 571 7309</a>
+          <a href="#contacto">Solicitar cotización</a>
+        </div>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 GQ Digital. Todos los derechos reservados.</span>
+      <span>Hecho con intención, en Colombia.</span>
+    </div>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/573185717309?text=Hola%20GQ%20Digital%2C%20quiero%20una%20cotizaci%C3%B3n%20para%20mi%20proyecto" target="_blank" aria-label="Escribir por WhatsApp">
+  <svg viewBox="0 0 24 24" fill="#fff"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.005c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2zm0 18.06h-.005a8.14 8.14 0 0 1-4.15-1.14l-.3-.18-3.12.82.83-3.04-.19-.31a8.15 8.15 0 0 1-1.25-4.33c0-4.5 3.67-8.16 8.18-8.16 2.18 0 4.23.85 5.78 2.4a8.11 8.11 0 0 1 2.39 5.77c0 4.51-3.67 8.17-8.17 8.17zm4.48-6.12c-.24-.12-1.45-.72-1.68-.8-.22-.08-.39-.12-.55.12-.16.24-.63.8-.78.96-.14.16-.29.18-.53.06-.24-.12-1.03-.38-1.96-1.21-.72-.65-1.21-1.44-1.35-1.68-.14-.24-.01-.37.11-.49.11-.11.24-.29.36-.43.12-.14.16-.24.24-.4.08-.16.04-.31-.02-.43-.06-.12-.55-1.33-.76-1.83-.2-.48-.4-.42-.55-.42-.14 0-.31-.02-.47-.02-.16 0-.43.06-.65.31-.22.24-.86.84-.86 2.05 0 1.2.88 2.37 1 2.53.12.16 1.72 2.63 4.17 3.69.58.25 1.04.4 1.39.51.59.19 1.12.16 1.54.1.47-.07 1.45-.59 1.65-1.16.2-.57.2-1.06.14-1.16-.06-.1-.22-.16-.46-.28z"/></svg>
+</a>
+
+<script>
+  // Typing animation in terminal
+  const lines = [
+    "Construyendo tu landing page...",
+    "Publicando tu aplicación web...",
+    "Optimizando tu experiencia UX/UI...",
+    "Impulsando tu marketing digital..."
+  ];
+  let li = 0, ci = 0, deleting = false;
+  const el = document.getElementById('typed-line');
+  function tick(){
+    const current = lines[li];
+    if(!deleting){
+      ci++;
+      el.textContent = current.slice(0, ci);
+      if(ci === current.length){ deleting = true; setTimeout(tick, 1400); return; }
+    } else {
+      ci--;
+      el.textContent = current.slice(0, ci);
+      if(ci === 0){ deleting = false; li = (li+1) % lines.length; }
+    }
+    setTimeout(tick, deleting ? 28 : 45);
+  }
+  tick();
+
+  // carousel
+  (function(){
+    const track = document.getElementById('carTrack');
+    const slides = track.querySelectorAll('.slide');
+    const dotsWrap = document.getElementById('carDots');
+    let idx = 0;
+    slides.forEach((_, i)=>{
+      const d = document.createElement('div');
+      d.className = 'car-dot' + (i===0 ? ' active' : '');
+      d.addEventListener('click', ()=> go(i));
+      dotsWrap.appendChild(d);
+    });
+    const dots = dotsWrap.querySelectorAll('.car-dot');
+    function go(i){
+      idx = (i + slides.length) % slides.length;
+      track.style.transform = `translateX(-${idx * 100}%)`;
+      dots.forEach((d,j)=> d.classList.toggle('active', j===idx));
+    }
+    document.getElementById('carNext').addEventListener('click', ()=> go(idx+1));
+    document.getElementById('carPrev').addEventListener('click', ()=> go(idx-1));
+    let autoplay = setInterval(()=> go(idx+1), 7000);
+    track.closest('.carousel').addEventListener('mouseenter', ()=> clearInterval(autoplay));
+    track.closest('.carousel').addEventListener('mouseleave', ()=> autoplay = setInterval(()=> go(idx+1), 7000));
+  })();
+
+  // scroll reveal
+  const observer = new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); observer.unobserve(e.target); } });
+  }, { threshold:0.12 });
+  document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+
+  // faq accordion
+  document.querySelectorAll('.faq-item').forEach(item=>{
+    item.addEventListener('click', ()=>{
+      const wasOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(i=>i.classList.remove('open'));
+      if(!wasOpen) item.classList.add('open');
+    });
+  });
+
+  // mobile menu (simple: scroll to contact if toggled without full nav — fallback)
+  document.getElementById('menuBtn').addEventListener('click', ()=>{
+    document.querySelector('#contacto').scrollIntoView({behavior:'smooth'});
+  });
+</script>
+
+</body>
+</html>
